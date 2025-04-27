@@ -32,19 +32,6 @@
       }
     },
     {
-      "name": "Numbers, Characters",
-      "scope": [
-        "constant.numeric",
-        "constant.character",
-        "constant.keyword",
-        "constant"
-      ],
-      "settings": {
-        "foreground": "#0000FF",
-        "fontStyle": "bold"
-      }
-    },
-    {
       "name": "Global definitions",
       "scope": "entity.name",
       "settings": {
@@ -84,14 +71,6 @@
       }
     },
     {
-      "name": "Go Source",
-      "scope": "source.go",
-      "settings": {
-        "background": "#BEDEC0",
-        "foreground": "#000"
-      }
-    },
-    {
       "name": "Go Keyword",
       "scope": [
         "keyword.control.go",
@@ -115,11 +94,19 @@
         "keyword.string.go",
         "storage.type.string.go",
         "storage.type.byte.go",
-        "storage.type.error.go",
-        "constant.language.null.go"
+        "storage.type.error.go"
       ],
       "settings": {
         "foreground": "#0000F0"
+      }
+    },
+    {
+      "name": "Go builtin constant",
+      "scope": [
+        "constant.language.null.go"
+      ],
+      "settings": {
+        "foreground": "#0000dc"
       }
     },
     {
@@ -183,7 +170,14 @@
         "entity.name.function.support.builtin.go"
       ],
       "settings": {
-        "foreground": "#0000F0",
+        "foreground": "#0000F0"
+      }
+    },
+    {
+      "name": "Go Placeholder",
+      "scope": ["constant.other.placeholder.go"],
+      "settings": {
+        "foreground": "#000080",
         "fontStyle": "bold"
       }
     },
@@ -193,13 +187,6 @@
       "settings": {
         "foreground": "#C8C8C8",
         "fontStyle": "bold"
-      }
-    },
-    {
-      "name": "Go Builtin Type Reference",
-      "scope": ["support.type.builtin.go"],
-      "settings": {
-        "foreground": "#FCFCFC"
       }
     },
     {
@@ -283,7 +270,7 @@
     },
     {
       "name": "Go Type Reference",
-      "scope": ["entity.name.type.go", "storage.type.go"],
+      "scope": ["entity.name.type.go"],
       "settings": {
         "foreground": "#47AAAA",
         "fontStyle": "bold"
@@ -331,7 +318,7 @@
     },
     {
       "name": "Types (General)",
-      "scope": ["entity.name.type", "support.type", "storage.type"],
+      "scope": ["entity.name.type", "support.type"],
       "settings": {
         "foreground": "#47AAAA",
         "fontStyle": "bold"
