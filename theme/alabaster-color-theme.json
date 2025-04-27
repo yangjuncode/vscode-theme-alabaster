@@ -94,19 +94,27 @@
         "keyword.string.go",
         "storage.type.string.go",
         "storage.type.byte.go",
-        "storage.type.error.go"
+        "storage.type.error.go",
+        "storage.type.numeric.go",
+        "storage.type"
       ],
       "settings": {
         "foreground": "#0000F0"
       }
     },
     {
-      "name": "Go builtin constant",
-      "scope": [
-        "constant.language.null.go"
-      ],
+      "name": "builtin constant",
+      "scope": ["constant.language"],
       "settings": {
         "foreground": "#0000dc"
+      }
+    },
+    {
+      "name": "Go variable constant",
+      "scope": ["variable.other.constant.go"],
+      "settings": {
+        "foreground": "#660E7A",
+        "fontStyle": "bold"
       }
     },
     {
